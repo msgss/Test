@@ -35,7 +35,7 @@ int main(void)
     rt_uint16_t tick_time=0; 
     rt_uint16_t test=0;
     
-    rt_kprintf("test01\r\n");
+    rt_kprintf("test02\r\n");
     while(count++)
     {
         rt_thread_mdelay(500);
