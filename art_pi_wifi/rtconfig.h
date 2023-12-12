@@ -93,6 +93,7 @@
 #define RT_SERIAL_USING_DMA
 #define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_PIN
+#define RT_USING_RTC
 #define RT_USING_SDIO
 #define RT_SDIO_STACK_SIZE 512
 #define RT_SDIO_THREAD_PRIORITY 15
@@ -252,6 +253,12 @@
 /* CYW43012 WiFi */
 
 
+/* BL808 WiFi */
+
+
+/* CYW43439 WiFi */
+
+
 /* IoT Cloud */
 
 
@@ -358,6 +365,7 @@
 #define BSP_USING_SPI1
 #define BSP_USING_SDIO
 #define BSP_USING_SDIO2
+#define BSP_USING_ONCHIP_RTC
 
 /* External Libraries */
 
