@@ -61,7 +61,6 @@ static void my_mqtt_thread(void *parameter)
     mqtt_set_cmd_timeout   (client, 4000);
     mqtt_set_read_buf_size (client, 2048);
     mqtt_set_write_buf_size(client, 2048);
-     
     do
     {
       if(mqtt_connect(client)==RT_NULL)
@@ -82,12 +81,8 @@ static void my_mqtt_thread(void *parameter)
     while(1)
     {
        mqtt_sleep_ms(5000);  
-
-       //mqtt???????
        if(client->mqtt_client_state!=CLIENT_STATE_CONNECTED)//mqtt tcp???
        {
-				 // client = mqtt_lease();
-				 
           if(++diconnet_times>=DICONNET_TIME_MAX)
           {
             diconnet_times=0;
