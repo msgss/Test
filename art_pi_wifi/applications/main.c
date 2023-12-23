@@ -43,7 +43,7 @@ int main(void)
     wlan_autoconnect_init();
     rt_wlan_config_autoreconnect(RT_TRUE);
 
-    rt_kprintf("test\r\n");
+	  rt_kprintf("soft:01\r\n");
     while(1)
     {
 			  Led_run_toggle();
